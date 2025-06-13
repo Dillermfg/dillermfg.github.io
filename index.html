@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pie Cut Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pie Cut Calculator</h1>
+
+    <form id="calculator-form">
+      <label>Bend Angle (°)
+        <input type="number" id="bend-angle" required />
+      </label>
+      <label>Bend Radius (inches)
+        <input type="number" id="bend-radius" required />
+      </label>
+      <label>Tubing Diameter (inches)
+        <input type="number" id="tube-diameter" required />
+      </label>
+      <label>Number of Pie Cuts
+        <input type="number" id="num-cuts" required />
+      </label>
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="results" class="hidden">
+      <h2>Results:</h2>
+      <p><strong>Angle per Cut:</strong> <span id="angle-per-cut"></span>°</p>
+      <p><strong>Segment Length:</strong> <span id="segment-length"></span> inches</p>
+      <p><strong>Total Tubing Length:</strong> <span id="total-length"></span> inches</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
