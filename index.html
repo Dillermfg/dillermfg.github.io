@@ -12,21 +12,21 @@
     <h1>Pie Cut Calculator</h1>
 
     <form id="calculator-form">
-      <label>Bend Angle (°)
-        <input type="number" id="bend-angle" required />
-      </label>
-      <label>Bend Radius (inches)
-        <input type="number" id="bend-radius" required />
-      </label>
-      <label>Tubing Diameter (inches)
-        <input type="number" id="tube-diameter" required />
-      </label>
-      <label>Number of Pie Cuts
-        <input type="number" id="num-cuts" required />
-      </label>
-      <button type="submit">Calculate</button>
-    </form>
-
+  <label>Bend Angle (°)
+    <input type="number" id="bend-angle" step="any" required />
+  </label>
+  <label>Bend Radius (inches)
+    <input type="number" id="bend-radius" step="any" required />
+  </label>
+  <label>Tubing Diameter (inches)
+    <input type="number" id="tube-diameter" step="any" required />
+  </label>
+  <label>Number of Pie Cuts
+    <input type="number" id="num-cuts" step="1" required />
+  </label>
+  <button type="submit">Calculate</button>
+</form>
+    
     <div id="results" class="hidden">
       <h2>Results:</h2>
       <p><strong>Angle per Cut:</strong> <span id="angle-per-cut"></span>°</p>
